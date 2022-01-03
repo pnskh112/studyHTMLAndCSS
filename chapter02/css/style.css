@@ -1,0 +1,2 @@
+/* CSSから別なCSSを読み込むためには@importが必要 */
+@import url(sanitize.css);
