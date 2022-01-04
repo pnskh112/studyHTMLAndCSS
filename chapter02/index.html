@@ -6,7 +6,20 @@
         <title>イヤホンジャックの向こう側</title>
     </head>
     <body>
-        <h1>イヤホンジャックの向こう側</h1>
+        <!-- h1タグは表示している１つのWebページ内で１つだけであることが普通 -->
+        <!-- なのでセクションを分けてあげる -->
+        <!-- セクションが分かれていれば見出しが分かれていてもOK -->
+        <!-- headerタグは一つのページ内で一つしか使わないことが一般的なので、headerタグにグローバル属性のclassを持たせることはあまりない -->
+        <header>
+            <h1>COCOA</h1>
+        </header>
+        <!-- sectionタグは複数作ることもできる -->
+        <!-- 通常、sectionはclassというグローバル属性を持たせることができるのでそれをつけることが一般的 -->
+        <!-- CSSをつけるときは一般的にclass属性をつけることが多い -->
+        <!-- id属性はJavaScriptと組み合わせるときに使うのが普通 -->
+        <section class="information">
+            <h1>イヤホンジャックの向こう側</h1>
+        </section>
         <link rel="stylesheet" href="./css/style.css">
     </body>
 </html>
