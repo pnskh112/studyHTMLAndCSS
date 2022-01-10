@@ -14,12 +14,14 @@
             <header>
                 <h1>COCOA</h1>
             </header>
-            <!-- sectionタグは複数作ることもできる -->
-            <!-- 通常、sectionはclassというグローバル属性を持たせることができるのでそれをつけることが一般的 -->
-            <!-- CSSをつけるときは一般的にclass属性をつけることが多い -->
-            <!-- id属性はJavaScriptと組み合わせるときに使うのが普通 -->
-            <!-- なるべく余計なclassを作らなくて済むようにsectionタグなども使うように心がける -->
-            <section class="information">
+
+            <div class="content">
+              <!-- sectionタグは複数作ることもできる -->
+              <!-- 通常、sectionはclassというグローバル属性を持たせることができるのでそれをつけることが一般的 -->
+              <!-- CSSをつけるときは一般的にclass属性をつけることが多い -->
+              <!-- id属性はJavaScriptと組み合わせるときに使うのが普通 -->
+              <!-- なるべく余計なclassを作らなくて済むようにsectionタグなども使うように心がける -->
+              <section class="information">
                 <h1>イヤホンジャックの向こう側</h1>
                 <!-- spanタグでも可。どちらがいいかはお好みみたい -->
                 <p class="type">Album</p>
@@ -31,7 +33,21 @@
                   <p>HONDA CARS 静岡CM タイアップの「キミのうた」をはじめ、完全書き下ろしの新曲３曲を含む全６曲を収録。<br>
                   イヤホンジャックの向こう側に広がる世界を、ぜひご堪能ください。</p>
                 </div>
-            </section>
+              </section>
+              <section class="songs">
+                <h2>収録曲</h2>
+                <!-- 下のような書き方だと、要素がアルファベット順でcから始まる -->
+                <!-- <ol start="3" type="a"> -->
+                <ol class="clearfix">
+                  <li>C#</li>
+                  <li>ワンルームファッションショー</li>
+                  <li>ハッピータイム</li>
+                  <li>シャンディガフ</li>
+                  <li>僕は知らない</li>
+                  <li>キミのうた</li>
+                </ol>
+              </section>
+            </div>
             <link rel="stylesheet" href="./css/style.css">
         </div>
     </body>
