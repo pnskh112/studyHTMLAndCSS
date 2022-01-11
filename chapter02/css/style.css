@@ -115,9 +115,3 @@ header h1 {
   display: table;
   clear: both;
 }
-
-a {
-  color: #666;
-  /* 下線をつけさせないようにする */
-  text-decoration: none;
-}
