@@ -121,3 +121,8 @@ a {
   /* 下線をつけさせないようにする */
   text-decoration: none;
 }
+
+footer {
+  text-align: center;
+  font-size: 80%;
+}
