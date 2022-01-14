@@ -1,5 +1,6 @@
 /* CSSから別なCSSを読み込むためには@importが必要 */
 @import url(sanitize.css);
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
 
 body {
   background-color: #f0f0f0;
@@ -38,6 +39,8 @@ header h1 {
   /* text-align は CSS のプロパティで、ブロック要素または表セルボックスの水平方向の配置を設定します */
   /* https://developer.mozilla.org/ja/docs/Web/CSS/text-align */
   text-align: center;
+  /* 特徴的なタイトルの部分や、表示が少ない見出し意外はあまりWebフォントを使わないようにする */
+  font-family: 'Sriracha', cursive;
 }
 
 /* 画像まで右に流れ込んでしまわないように */
