@@ -59,6 +59,25 @@ header h1 {
   float: left;
   /* 左　下　右　上 */
   margin: 0 10px 10px 0;
+
+  /* アニメーションをするためにはtransition-xxxを使う */
+  /* opacityをした時にアニメーションが発動しますよ */
+  /* 全てに聞かせたい時は transition-property: allとする*/
+  transition-property: opacity;
+  /* アニメーションをする時間 */
+  /* 3sとかにするととても遅い */
+  transition-duration: 1s;
+  /* アニメーションに関する知識があるとわかるとのこと */
+  /* ease in とか ease outとかあるらしい */
+  transition-timing-function: ease;
+  /* アニメーションを行うまでの待ち時間 */
+  transition-delay: 0s;
+}
+
+/* :hoverは擬似クラス
+   状態によってスタイルを変えることができる */
+.description img:hover {
+  opacity: 0.5;
 }
 
 .information h1 {
