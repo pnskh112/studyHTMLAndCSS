@@ -14,7 +14,20 @@
     <!-- containerの中でも種類がある。container-lgにすると画面幅一杯にならずに少し小さく収まる -->
     <div class="container">
       <header>
-        <h1>ご利用アンケート</h1>
+        <!-- divはdivisionの略で、特に表示に影響のないタグ -->
+        <div class="row">
+          <div class="col-sm-6">
+            <h1>ご利用アンケート</h1>
+          </div>
+          <!-- gridシステム -->
+          <!-- bootstrapは１行を十二個のエリアに分ける -->
+          <!-- つまり、col-sm-6は半分の幅 -->
+          <!-- smの部分は、smallの略で、画面幅がスマホサイズまで小さくなったらこの6を解除して１行いっぱい使ってほしい、という意味 -->
+          <!-- 例えばcol-lg-6などにすると、もう少し広い範囲まで１行まで使うようになる -->
+          <div class="col-sm-6 text-right">
+            <a href="/">HOMEへ戻る</a>
+          </div>
+        </div>
       </header>
     </div>
     <hr>
