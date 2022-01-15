@@ -31,6 +31,23 @@
       </header>
     </div>
     <hr>
+    <div class="container">
+      <!-- bootstrapのgridシステムでrowをきめるとここからここまでが１行と定めることができる -->
+      <!-- divタグで定義することが普通だが、今回はformタグが全体を覆っているのでこちらに定義して不要なdivタグを作らなくて済む -->
+      <form action="" method="post" class="row">
+        <!-- offsetは英語で埋め合わせという意味、２つ分を埋め合わせるという意味 -->
+        <div class="class-sm-8 offset-sm-2">
+          <p>フォームを送信していただけますと幸いです</p>
+
+          <div class="form-group">
+              <!-- labelのfor属性とinputタグのid属性を揃えると２つが紐づくようになる -->
+            <label for="name">お名前</label>
+            <!-- bootstrapのclass属性form-control -->
+            <input type="text" id="name" name="name" class="form-control">
+          </div>
+        </div>
+      </form>
+    </div>
     <hr>
     <!-- containerを分けることでhrタグをbootstrapから切り離し画面幅いっぱいまでhrタグの横線を伸ばす -->
     <div class="container">
