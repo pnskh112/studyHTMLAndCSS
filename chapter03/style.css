@@ -14,3 +14,8 @@ h1 {
   font-size: 18px;
   font-weight: bold;
 }
+
+/* form-groupクラスのdiv要素の直下にあるlabel要素が対象 */
+.form-group > label {
+  font-weight: bold;
+}
