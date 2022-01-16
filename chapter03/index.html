@@ -37,13 +37,28 @@
       <form action="" method="post" class="row">
         <!-- offsetは英語で埋め合わせという意味、２つ分を埋め合わせるという意味 -->
         <div class="class-sm-8 offset-sm-2">
-          <p>フォームを送信していただけますと幸いです</p>
+          <p>フォームを送信してください</p>
 
           <div class="form-group">
               <!-- labelのfor属性とinputタグのid属性を揃えると２つが紐づくようになる -->
             <label for="name">お名前</label>
             <!-- bootstrapのclass属性form-control -->
-            <input type="text" id="name" name="name" class="form-control">
+            <!-- 最近はlabel項目がなくてplaceholderに「お名前」と書いていることも多いが、
+              音声ブラウザで見ている方がわかりにくかったり、
+              一度入力したら何の項目なのかわかりにくいのでイマイチ（アクセシビリティに配慮しよう） -->
+            <input type="text" id="name" name="name" class="form-control" placeholder="例）山田 太郎">
+          </div>
+          <div class="form-group">
+            <label for="job">ご職業</label> 
+            <!--  size="5" multiple などの属性もある -->
+            <select name="job" id="job" class="form-control" size="5" multiple>
+              <option value="">選択してください</option>
+              <option value="会社員">会社員</option>
+              <option value="学生">学生</option>
+              <option value="その他">その他</option>
+              <!-- 例えば性別の欄で、男性・女性とそれ以外でもよいように未回答という欄をつくっておくなど -->
+              <!-- しっかりと情勢に合わせよう！ -->
+            </select>
           </div>
         </div>
       </form>
