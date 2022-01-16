@@ -61,7 +61,7 @@
             </select>
           </div>
           <div class="form-group">
-            <!-- ここのラベルはどこにも紐づかない。チェックボックス一つ一つに -->
+            <!-- ここのラベルはどこにも紐づかない(for属性をかかない)。チェックボックス一つ一つに別途ラベルをつける。 -->
             <label>知りたい内容(複数選択可)</label>
             <!-- chekkuboxを作るには全体を囲うクラスform-checkが必要 -->
             <div class="form-check">
@@ -78,6 +78,28 @@
             <div class="form-check">
               <input type="checkbox" name="q1" id="q1_3" value="javascript" class="form-check-input">
               <label for="q1_3" class="form-check-label">Javascript</label>
+            </div>
+          </div>
+          <div class="form-group">
+            <!-- d-block要素ををつけることでdisplayプロパティのblockと同じで、bootstrapの機能でブロック要素にしてくれる -->
+            <label class="d-block">理解度はいかがですか</label>
+            <!-- class名にform-check-inlineをつけると横並びのinlineになる -->
+            <!-- ブロック要素とインライン要素が分かれるので改行がおこるので、最初の「理解度はいかがですか」の隣に並んでしまう -->
+            <div class="form-check form-check-inline">
+              <input type="radio" class="form-check-input" name="q2" id="q2_1" value="1">
+              <label for="q2_1" class="form-check-label">理解できなかった</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input type="radio" class="form-check-input" name="q2" id="q2_2" value="2">
+              <label for="q2_2" class="form-check-label">だいたい理解できた</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input type="radio" class="form-check-input" name="q2" id="q2_3" value="3">
+              <label for="q2_3" class="form-check-label">理解できた</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input type="radio" class="form-check-input" name="q2" id="q2_4" value="">
+              <label for="q2_4" class="form-check-label">回答しない</label>
             </div>
           </div>
 
